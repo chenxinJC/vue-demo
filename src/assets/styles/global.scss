@@ -1,0 +1,121 @@
+@import './reset.css';
+@import './border.scss';
+@import './color.scss';
+@import './mixins.scss';
+
+.animated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.animated {
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+}
+.fadeOut {
+  animation-delay: .3s;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+
+  &.f6f6f6 {
+    background: #f6f6f6;
+  }
+
+  .vux-header {
+    padding: px2rem(3) 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: $default_color;
+
+    .vux-header-title {
+      height: px2rem(40);
+      line-height: px2rem(40);
+      font-size: px2rem(18);
+    }
+
+    .vux-header-left {
+      @include flex-left;
+      min-width: px2rem(44);
+      height: px2rem(40);
+      padding-left: px2rem(15);
+      top: px2rem(3);
+      left: 0;
+      color: #fff;
+      a {
+        color: #fff;
+      }
+      .vux-header-back {
+        padding-left: px2rem(20);
+      }
+      .left-arrow {
+        width: px2rem(30);
+        height: px2rem(30);
+        left: px2rem(15);
+        top: px2rem(5);
+        &:before {
+          border-color: #fff;
+        }
+      }
+    }
+
+    .vux-header-right {
+      min-width: px2rem(44);
+      top: px2rem(3);
+      height: px2rem(40);
+      @include flex-right;
+      color: #fff;
+    }
+  }
+  .weui-cell{
+    height: px2rem(24);
+    line-height: px2rem(24);
+    padding: px2rem(10) px2rem(15);
+    font-size: px2rem(16);
+  }
+  .weui-input{
+    height: px2rem(24);
+    line-height: px2rem(24);
+  }
+  .weui-btn{
+    @include flex-center;
+    height: px2rem(44);
+    line-height: px2rem(44);
+    font-size: px2rem(16);
+  }
+  [class^="weui-icon-"]:before, [class*=" weui-icon-"]:before{
+    // width: px2rem(14);
+    // height: px2rem(14);
+    font-size: px2rem(14);
+  }
+  .vux-x-input .weui-icon{
+    padding-left: px2rem(5);
+  }
+  .vux-x-input .vux-input-icon{
+    font-size: px2rem(20);
+  }
+  .vux-input-icon.weui-icon-warn:before, .vux-input-icon.weui-icon-success:before{
+    font-size: px2rem(20);
+  }
+  .weui-icon_toast {
+    margin: 15px 0 7px;
+  }
+  .weui-toast__content {
+    // font-size: px2rem(14);
+  }
+  .weui-toast_text .weui-toast__content {
+    padding: px2rem(8) px2rem(6);
+    font-size: px2rem(14);
+    line-height: px2rem(18);
+  }
+}

@@ -1,0 +1,36 @@
+@import './mixins.scss';
+@import './color.scss';
+
+.form /deep/ {
+  .weui-cells:before,
+  .weui-cells:after,
+  .weui-cell:before {
+    border-width: 0;
+  }
+  .weui-cell {
+    background: #f2f2f2;
+  }
+  .weui-btn:after {
+    border-width: 0;
+  }
+  .weui-btn_primary {
+    background: $default_color;
+  }
+  .weui-btn_disabled.weui-btn_primary {
+    background: $default_light_color;
+  }
+  .weui-btn_primary:not(.weui-btn_disabled):active {
+    background: $default_dark_color;
+  }
+}
+
+.btn-loading {
+  height: px2rem(16);
+  line-height: px2rem(16);
+  font-size: px2rem(14);
+  img {
+    height: px2rem(16);
+    margin-right: px2rem(8);
+    vertical-align: middle;
+  }
+}
