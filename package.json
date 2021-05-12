@@ -17,7 +17,7 @@
     "echarts": "^4.2.0-rc.2",
     "js-md5": "^0.7.3",
     "qs": "^6.6.0",
-    "swiper": "^4.4.6",
+    "swiper": "^6.5.1",
     "vue": "^2.6.7",
     "vue-cropper": "^0.4.8",
     "vue-navigation": "^1.1.4",
